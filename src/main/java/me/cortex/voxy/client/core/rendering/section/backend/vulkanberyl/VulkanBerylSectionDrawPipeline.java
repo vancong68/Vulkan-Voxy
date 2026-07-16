@@ -6553,8 +6553,8 @@ public final class VulkanBerylSectionDrawPipeline {
 
     private static List<ImageDescriptor> createManualDrawImageDescriptors() {
         return List.of(
-                new ImageDescriptor(7, "sampler2D", "blockModelAtlas", VTextureSelector.getTextureIdx("Sampler0")),
-                new ImageDescriptor(8, "sampler2D", "depthTex", VTextureSelector.getTextureIdx("Sampler7"))
+                new ImageDescriptor(7, "sampler2D", "blockModelAtlas", VTextureSelector.getTextureIdx("Sampler0"), VK10.VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER),
+                new ImageDescriptor(8, "sampler2D", "depthTex", VTextureSelector.getTextureIdx("Sampler7"), VK10.VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER)
         );
     }
 
